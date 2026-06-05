@@ -5552,23 +5552,23 @@ h6 {
 }
 .main-header--five .container-fluid::before {
   content: "";
-  width: 645px;
+  width: 555px;
   height: 100%;
   position: absolute;
   top: 0px;
   right: 0px;
-  background-color: var(--cherito-base);
+  background-color: #ffffff;
   border-radius: 10px 0px 0px 10px;
   z-index: 1;
 }
 @media (max-width: 1799px) {
   .main-header--five .container-fluid::before {
-    width: 430px;
+    width: 330px;
   }
 }
 @media (max-width: 1599px) {
   .main-header--five .container-fluid::before {
-    width: 350px;
+    width: 200px;
   }
 }
 @media (max-width: 1199px) {
