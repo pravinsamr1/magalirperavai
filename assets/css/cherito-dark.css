@@ -1,0 +1,236 @@
+:root {
+  --cherito-white: #212226;
+  --cherito-white-rgb: 33, 34, 38;
+  --cherito-black: #FFFFFF;
+  --cherito-black-rgb: 255, 255, 255;
+  --cherito-black2: #2D2E32;
+  --cherito-black2-rgb: 45, 46, 50;
+  --cherito-black3: #000000;
+  --cherito-black3-rgb: 0, 0, 0;
+}
+
+.demo-one__btn .cherito-btn__hover,
+.topbar .social-links a,
+.main-header::before,
+.main-header__search:hover,
+.main-header__cart:hover,
+.main-header__call__icon,
+.mobile-nav__btn span,
+.mobile-nav__content .main-menu__list li a button.expanded,
+.mobile-nav__social a:hover,
+.search-popup__form input[type=search],
+.search-popup__form input[type=text],
+.main-slider-one__title__inner::before,
+.main-slider-one__title__inner::after,
+.main-slider-one__button .cherito-btn__hover,
+.donation-card .cherito-btn__hover,
+.donation-card--primary .cherito-btn,
+.footer-widget__subscribe {
+  background-color: var(--cherito-black);
+}
+
+.main-header__search,
+.main-header__cart,
+.main-slider-one__tagline,
+.footer-widget .social-links a,
+.footer-widget__info__icon-box {
+  background-color: rgba(var(--cherito-black-rgb), 0.1);
+}
+
+.blog-card__title::before,
+.blog-card__title::after {
+  background-color: rgba(var(--cherito-black-rgb), 0.2);
+}
+
+.donation-card .progress-box__bar__inner::before {
+  background-color: rgba(var(--cherito-black-rgb), 0.22);
+}
+
+body,
+.megamenu-popup,
+.main-slider-one__bg__right__shape,
+.features-one,
+.services-one::after,
+.testimonials-one,
+.donations-one,
+.testimonial-card__ratings,
+.donation-card .progress-box__content,
+.donate-one .donate-form .form-one input[type=text],
+.donate-one .donate-form .form-one input[type=email],
+.donate-one .donate-form__amount__btn,
+.donate-one,
+.funfact-one__grid,
+.join-volunteer::after,
+.blog-one {
+  background-color: var(--cherito-black2);
+}
+
+.preloader,
+.main-header .container-fluid::after,
+.mobile-nav__btn:hover span,
+.mobile-nav__content,
+.main-slider-one,
+.main-slider-one__item,
+.features-one__card--1 .features-one__card__text__bg,
+.features-one__card--1 .features-one__card__icon-box,
+.about-one,
+.testimonials-one__thumb-box__inner,
+.testimonial-card::after,
+.video-one,
+.donate-one__inner,
+.funfact-card,
+.join-volunteer,
+.blog-card__category,
+.cta-one,
+.main-footer__bg,
+.footer-widget__info li:first-child .footer-widget__info__icon-box {
+  background-color: var(--cherito-white);
+}
+
+.features-one__card--2 .features-one__card__icon-box {
+  background-color: rgba(var(--cherito-white-rgb), 0.2);
+}
+
+.demo-one__btns,
+.about-one__inner__item__bg::after {
+  background-color: rgba(var(--cherito-white-rgb), 0.7);
+}
+
+.services-one__bg::after {
+  background-color: rgba(var(--cherito-white-rgb), 0.9);
+}
+
+.join-volunteer__card::after {
+  background-color: rgba(var(--cherito-white-rgb), 0.8);
+}
+
+.funfact-one .funfact-card:not(:last-child)::after {
+  background-color: rgba(var(--cherito-white3-rgb), 0.2);
+}
+
+.donation-card--primary .cherito-btn__hover {
+  background-color: var(--cherito-base);
+}
+
+.service-card__btn {
+  background-image: url(../images/shapes/service-card-btn-shape-1-1-dark.png);
+}
+
+.donate-one__bg {
+  mix-blend-mode: color-burn;
+}
+
+.about-one__bg {
+  opacity: 0.2;
+}
+
+.cherito-btn:hover,
+.cherito-owl__carousel--basic-nav.owl-carousel .owl-nav button,
+.social-links__icon,
+.mobile-nav__content .main-menu__list li a button.expanded,
+.search-popup__form input[type=search]:focus,
+.search-popup__form input[type=text]:focus,
+.main-slider-one__button .cherito-btn:hover,
+.donation-card--primary .cherito-btn,
+.cta-one__button .cherito-btn,
+.footer-widget__subscribe input[type=email]:focus,
+.footer-widget__subscribe button[type=submit]:hover {
+  color: var(--cherito-white);
+}
+
+.cherito-btn,
+.cherito-owl__carousel--basic-nav.owl-carousel .owl-nav button:hover,
+.topbar .social-links a:hover .social-links__icon,
+.main-menu .main-menu__list > li.current > a,
+.main-menu .main-menu__list > li:hover > a,
+.main-menu .main-menu__list li ul li.current > a,
+.main-menu .main-menu__list li ul li:hover > a,
+.main-menu .main-menu__list li ul li > a::after,
+.main-header__search__icon,
+.main-header__cart__icon,
+.main-header__call:hover .main-header__call__icon,
+.main-header__call__title,
+.main-header__call__number,
+.mobile-nav__content .main-menu__list li > a,
+.mobile-nav__content .main-menu__list li a button,
+.mobile-nav__close,
+.mobile-nav__contact__icon,
+.mobile-nav__contact li,
+.mobile-nav__social .social-links__icon,
+.search-popup__form .cherito-btn,
+.main-slider-one__title,
+.features-one__card__title,
+.features-one__card__icon,
+.features-one__card--2:hover .features-one__card__icon,
+.about-one__inner__title,
+.about-one__inner__icon,
+.services-one .sec-title__title,
+.services-one__custome-navs button,
+.services-one__custome-navs button:hover,
+.service-card:hover .service-card__title,
+.service-card:hover .service-card__text,
+.service-card__image__icon,
+.testimonial-card:hover .cherito-ratings__icon,
+.video-btn,
+.donation-card__category,
+.donation-card--primary .cherito-btn:hover,
+.progress-box__number,
+.donate-one .donate-form__amount input[type=text]:focus,
+.donate-one .donate-form__amount__btn:hover,
+.donate-one .donate-form__amount__btn.active,
+.funfact-card:hover .funfact-card__icon,
+.funfact-card:hover .funfact-card__count,
+.funfact-card:hover .funfact-card__text,
+.join-volunteer__card__title,
+.join-volunteer__card .cherito-btn:hover,
+.blog-card:hover .blog-card__category,
+.blog-card .cherito-btn:hover,
+.cta-one__button .cherito-btn:hover,
+.footer-widget .social-links .social-links__icon,
+.footer-widget .social-links a:hover .social-links__icon,
+.footer-widget__title,
+.footer-widget__info__icon,
+.footer-widget__info li:hover .footer-widget__info__icon,
+.main-footer__copyright {
+  color: var(--cherito-black);
+}
+
+.join-volunteer__card__text {
+  color: rgba(var(--cherito-black-rgb), 0.6);
+}
+
+.about-one__text {
+  color: var(--cherito-white3);
+}
+
+.donate-one .donate-form__amount input[type=text],
+.donate-one .donate-form__amount__btn {
+  color: var(--cherito-text);
+}
+
+.mobile-nav__content .main-menu__list li:not(:last-child),
+.testimonial-card__identity {
+  border-color: rgba(var(--cherito-black-rgb), 0.1);
+}
+
+.testimonial-card__image {
+  border-color: rgba(var(--cherito-black-rgb), 0.3);
+}
+
+.testimonial-card__shape {
+  border-color: var(--cherito-white) transparent transparent transparent;
+}
+
+.demo-one__card {
+  box-shadow: 0px 10px 60px 0px rgba(var(--cherito-white-rgb), 0.1);
+}
+
+.donation-card {
+  box-shadow: 0px 4px 60px rgba(var(--cherito-black3-rgb), 0.1);
+}
+
+.funfact-one__grid {
+  box-shadow: none;
+  filter: drop-shadow(0px 4px 60px rgba(var(--cherito-black3-rgb), 0.3));
+}
+/*# sourceMappingURL=cherito-dark.css.map */
