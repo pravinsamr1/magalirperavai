@@ -1,13 +1,14 @@
 :root {
-  --cherito-base: #56509F;
+  --cherito-base: #430011;
   --cherito-base-rgb: 86, 80, 159;
   --cherito-primary: #FE6500;
   --cherito-primary-rgb: 254, 101, 0;
-  --cherito-black: #100E2C;
+  --cherito-black: #430011;
   --cherito-black-rgb: 16, 14, 44;
   --cherito-white2: #E9E9F2;
   --cherito-white2-rgb: 233, 233, 242;
   --cherito-white3: #D1D0E0;
   --cherito-white3-rgb: 209, 208, 224;
 }
+
 /*# sourceMappingURL=color-4.css.map */
