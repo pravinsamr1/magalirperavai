@@ -28877,3 +28877,31 @@ body.boxed-wrapper .page-wrapper {
 .bdr {
   border-radius: 10px;
 }
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-btn {
+    border: 1px solid #7a003c;
+    background: #fff;
+    color: #7a003c;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.lang-btn.active {
+    background: #7a003c;
+    color: #fff;
+}
+
+.lang-btn:hover {
+    background: #7a003c;
+    color: #fff;
+}
