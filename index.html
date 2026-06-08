@@ -107,9 +107,8 @@
                                             </div><!-- /.topbar__contact__info -->
                                         </li>
                                         <li>
-                                            <div class="language-toggle">
-                                                <button class="lang-btn active" data-lang="en">EN</button>
-                                                <button class="lang-btn" data-lang="ta">தமிழ்</button>
+                                            <div class="language-switcher">
+                                                <div id="google_translate_element"></div>
                                             </div>
                                         </li>
                                     </ul><!-- /.topbar__contact list-unstyled -->
@@ -1330,27 +1329,19 @@
     <script src="assets/vendors/circle-progress/circle-progress.min.js"></script>
     <!-- template js -->
     <script src="assets/js/cherito.js"></script>
-
-    <script>
-        const buttons = document.querySelectorAll('.lang-btn');
-
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                buttons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                const lang = button.dataset.lang;
-
-                if (lang === 'ta') {
-                    // Load Tamil content
-                    console.log('Tamil Selected');
-                } else {
-                    // Load English content
-                    console.log('English Selected');
-                }
-            });
-        });
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ta',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
     </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
 </body>
 
 </html>
