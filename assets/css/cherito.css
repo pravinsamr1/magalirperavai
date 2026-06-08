@@ -5577,7 +5577,7 @@ h6 {
   .main-header__left {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 120px;
   }
 }
 
@@ -6380,8 +6380,8 @@ h6 {
 
 @media (max-width: 1799px) {
   .main-header--five .container-fluid {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -6413,7 +6413,7 @@ h6 {
 
 @media (max-width: 1799px) {
   .main-header--five .container-fluid::before {
-    width: 330px;
+    width: 265px;
   }
 }
 
@@ -6450,7 +6450,7 @@ h6 {
 }
 
 .main-header--five .main-header__left {
-  gap: 42px;
+  gap: 95px;
 }
 
 .main-header--five .main-header__nav {
@@ -6818,7 +6818,7 @@ h6 {
 }
 
 .main-menu .main-menu__list>li+li {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .main-menu .main-menu__list>li>a {
@@ -11026,7 +11026,7 @@ li:hover .sidebar__comments__icon {
 }
 
 .main-footer__top {
-  padding-top: 140px;
+  padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
   overflow: hidden;
@@ -11100,7 +11100,7 @@ li:hover .sidebar__comments__icon {
 .main-footer--home4 .footer-widget__links li,
 .main-footer--home5 .footer-widget__links li,
 .main-footer--home6 .footer-widget__links li {
-  color: RGBA(var(--cherito-white-rgb, 255, 255, 255), 0.4);
+  color: #ffffff;
 }
 
 .main-footer--home2 .main-footer__bottom {
@@ -13764,7 +13764,7 @@ li:hover .footer-widget__info__icon {
   overflow: hidden;
   position: relative;
   margin-bottom: 16px;
-  font-size: 60px;
+  font-size: 50px;
   color: var(--cherito-white, #ffffff);
   font-weight: 700;
   line-height: 1.125;
@@ -19368,7 +19368,7 @@ li:hover .footer-widget__info__icon {
 
 .donation-card-five__progress {
   position: relative;
-  padding: 62px 30px 24px;
+  padding: 24px 30px 24px;
   border-radius: 0px 0px 10px 10px;
   background-color: var(--cherito-white2);
 }
@@ -28872,4 +28872,8 @@ body.boxed-wrapper .page-wrapper {
   .about-five__image {
     width: 100%;
   }
+}
+
+.bdr {
+  border-radius: 10px;
 }
