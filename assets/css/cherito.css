@@ -1674,7 +1674,7 @@ h6 {
 
 .video-two {
   position: relative;
-  padding: 100px 0px;
+  padding: 60px 0px;
 }
 
 @media (max-width: 575px) {
@@ -11027,14 +11027,14 @@ li:hover .sidebar__comments__icon {
 
 .main-footer__top {
   padding-top: 140px;
-  padding-bottom: 96px;
+  padding-bottom: 60px;
   position: relative;
   overflow: hidden;
 }
 
 @media (max-width: 1599px) {
   .main-footer__top {
-    padding-top: 120px;
+    padding-top: 60px;
   }
 }
 
@@ -11086,7 +11086,7 @@ li:hover .sidebar__comments__icon {
 }
 
 .main-footer__bottom__inner {
-  padding: 25.5px 0 24.5px;
+  padding: 15.5px 0 15.5px;
   text-align: center;
 }
 
@@ -11305,6 +11305,7 @@ li:hover .sidebar__comments__icon {
 
 .footer-widget__about {
   margin-bottom: 21px;
+  color: #ffffff;
 }
 
 .footer-widget__subscribe {
@@ -11384,13 +11385,13 @@ li:hover .sidebar__comments__icon {
 .footer-widget__links li {
   font-size: 16px;
   color: var(--cherito-text, #727272);
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.75;
   text-transform: capitalize;
 }
 
 .footer-widget__links li a {
-  color: inherit;
+  color: #ffffff;
   background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
   transition: all 500ms ease;
 }
@@ -19362,6 +19363,7 @@ li:hover .footer-widget__info__icon {
 .donation-card-five__text {
   margin-bottom: 0;
   font-weight: 600;
+  color: #ffffff;
 }
 
 .donation-card-five__progress {
@@ -25171,7 +25173,7 @@ li:hover .footer-widget__info__icon {
 --------------------------------------------------------------*/
 .cta-one {
   position: relative;
-  padding: 63px 0 65px;
+  padding: 45px 0 45px;
   background-color: var(--cherito-white2, #F4F0ED);
 }
 
@@ -28860,5 +28862,14 @@ body.boxed-wrapper .page-wrapper {
 
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .about-five__text, .activities-one__text, .service-card-four__text {
+    text-align: justify;
+  }
+  .about-five__image {
+    width: 100%;
   }
 }
