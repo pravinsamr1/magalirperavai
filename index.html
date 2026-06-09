@@ -66,19 +66,26 @@
                                 <div class="topbar__inner">
                                     <ul class="topbar__contact list-unstyled">
 
-                                            <li style="flex:1; margin-left: 45px; color: #430011;">
-                                                <marquee direction="left" scrollamount="4">
-                                                   <b>தமிழக மகளிர் பேரவை, &nbsp; பெண்கள் முன்னேற்றம், &nbsp; கிராம வளர்ச்சி, &nbsp; சூரிய
-                                                    சக்தி கிராமங்கள், &nbsp; இயற்கை விவசாயம், &nbsp; சமூக நலன், &nbsp; கல்வி மற்றும் திறன்
-                                                    மேம்பாடு, &nbsp;</b> 
-                                                </marquee>
-                                            </li>
+                                        <li class="news-marquee">
+                                            <marquee direction="left" scrollamount="4">
+                                                <b>
+                                                    தமிழக மகளிர் பேரவை • பெண்கள் முன்னேற்றம் • கிராம வளர்ச்சி •
+                                                    சூரிய சக்தி கிராமங்கள் • இயற்கை விவசாயம் • சமூக நலன் •
+                                                    கல்வி மற்றும் திறன் மேம்பாடு •
+                                                </b>
+                                            </marquee>
+                                        </li>
 
-                                            <li>
-                                                <div id="google_translate_element"></div>
-                                            </li>
+                                        <li>
+                                            <div class="language-switcher">
+                                                <button id="btn-en" class="lang-btn active">English</button>
+                                                <button id="btn-ta" class="lang-btn">தமிழ்</button>
 
-                                        </ul>
+                                                <div id="google_translate_element" style="display:none;"></div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
                                 </div><!-- /.topbar__inner -->
                             </div><!-- /.topbar -->
                             <nav class="main-header__nav main-menu">
@@ -197,9 +204,8 @@
                                             </span><!-- /.main-slider-five__title__hover -->
                                         </span>
                                     </h2><!-- /.title -->
-                                    <br>
 
-                                     <div class="main-slider-five__button">
+                                    <div class="main-slider-five__button">
                                         <div class="main-slider-five__button__inner">
                                             <a href="become-a-volunteer.html" class="cherito-btn">
                                                 <span class="cherito-btn__text">Register Now</span>
@@ -210,7 +216,7 @@
                                                 <span class="cherito-btn__hover cherito-btn__hover--5"></span>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div><!-- /.main-slider-five__content -->
                             </div><!-- /.col-xl-7 col-lg-10 -->
                         </div><!-- /.row -->
@@ -259,9 +265,7 @@
                                             </span><!-- /.main-slider-five__title__hover -->
                                         </span>
                                     </h2><!-- /.title -->
-                                    <br>
-
-                                     <div class="main-slider-five__button">
+                                    <div class="main-slider-five__button">
                                         <div class="main-slider-five__button__inner">
                                             <a href="about.html" class="cherito-btn">
                                                 <span class="cherito-btn__text">Register Now</span>
@@ -272,7 +276,7 @@
                                                 <span class="cherito-btn__hover cherito-btn__hover--5"></span>
                                             </a>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div><!-- /.main-slider-five__content -->
                             </div><!-- /.col-xl-7 col-lg-10 -->
                         </div><!-- /.row -->
@@ -1298,18 +1302,72 @@
     <script src="assets/vendors/circle-progress/circle-progress.min.js"></script>
     <!-- template js -->
     <script src="assets/js/cherito.js"></script>
-    <script type="text/javascript">
+    <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                includedLanguages: 'en,ta',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                includedLanguages: 'ta',
+                autoDisplay: false
             }, 'google_translate_element');
         }
     </script>
 
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+const enBtn = document.getElementById("btn-en");
+const taBtn = document.getElementById("btn-ta");
+
+function setCookie(name, value) {
+    document.cookie = name + "=" + value + ";path=/";
+}
+
+function switchToTamil() {
+    const select = document.querySelector(".goog-te-combo");
+
+    if (!select) {
+        setTimeout(switchToTamil, 500);
+        return;
+    }
+
+    select.value = "ta";
+    select.dispatchEvent(new Event("change"));
+
+    taBtn.classList.add("active");
+    enBtn.classList.remove("active");
+
+    localStorage.setItem("language", "ta");
+}
+
+function switchToEnglish() {
+    document.cookie =
+        "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+    document.cookie =
+        "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+        window.location.hostname;
+
+    localStorage.setItem("language", "en");
+
+    window.location.reload();
+}
+
+taBtn.addEventListener("click", switchToTamil);
+enBtn.addEventListener("click", switchToEnglish);
+
+window.addEventListener("load", () => {
+    const currentLang = localStorage.getItem("language") || "en";
+
+    if (currentLang === "ta") {
+        taBtn.classList.add("active");
+        enBtn.classList.remove("active");
+
+        setTimeout(switchToTamil, 1500);
+    } else {
+        enBtn.classList.add("active");
+        taBtn.classList.remove("active");
+    }
+});
+</script>
 
 </body>
 

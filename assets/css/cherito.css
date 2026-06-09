@@ -5098,12 +5098,17 @@ h6 {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 @media (max-width: 1199px) {
   .topbar--three .topbar__contact {
-    gap: 30px;
+    gap: 40px;
+  }
+}
+@media (min-width: 1600px) {
+  .topbar--three .topbar__contact {
+    gap: 100px;
   }
 }
 
@@ -6338,7 +6343,7 @@ h6 {
 
   .main-header--five::before,
   .main-header--five::after {
-    width: calc(100% - 292px);
+    width: calc(100% - 220px);
   }
 }
 
@@ -6450,12 +6455,12 @@ h6 {
 }
 
 .main-header--five .main-header__left {
-  gap: 95px;
+  gap: 80px;
 }
 
 .main-header--five .main-header__nav {
   position: relative;
-  padding-left: 90px;
+  padding-left: 40px;
   z-index: 1;
 }
 
@@ -13673,8 +13678,8 @@ li:hover .footer-widget__info__icon {
 
 .main-slider-five__item {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 110px;
+  padding-bottom: 130px;
   background-color: var(--cherito-white, #ffffff);
   overflow: hidden;
 }
@@ -13767,7 +13772,8 @@ li:hover .footer-widget__info__icon {
   font-size: 50px;
   color: var(--cherito-white, #ffffff);
   font-weight: 700;
-  line-height: 1.125;
+  line-height: 1.35;
+  padding-bottom: 25px;
 }
 
 @media (max-width: 1399px) {
@@ -28880,113 +28886,69 @@ body.boxed-wrapper .page-wrapper {
 
 
 
-.goog-te-gadget {
-    font-size: 12px !important;
-}
-
-.goog-te-gadget-simple {
-    border: none !important;
-    background: transparent !important;
-    padding: 3px !important;
-}
-
-.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
-    color: #333 !important;
-}
-
-.topbar__inner {
-    padding: 0 20px;
-}
-
-.topbar-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 20px;
-}
-
-.marquee-wrapper {
-    flex: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    height: 40px;
-    display: flex;
-    align-items: center;
-}
-
-.marquee-content {
-    display: inline-block;
-    color: #7b002c; /* Theme Maroon */
-    font-size: 15px;
-    font-weight: 700;
-    padding-left: 100%;
-    animation: marquee 25s linear infinite;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 .language-switcher {
-    min-width: 170px;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    margin-top: -12px;
+    padding: 0px;
+    min-width: 140px;
+    height: 40px;
 }
+
+.lang-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+    background: #31010d;
+    color: #ec9f12;;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.goog-te-banner-frame,
+.goog-logo-link,
+.goog-te-gadget span,
+.skiptranslate iframe {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+.goog-te-gadget {
+    font-size: 0 !important;
+}
+
+
 .topbar__contact{
-    display:flex;
-    align-items:center;
-    width:90%;
+    /* display:flex;
+    align-items:center; */
+    width:100%;
     margin:0;
 }
 
-.marquee-item{
-    flex:1;
-    min-width:0;
+
+
+.news-marquee{
+    width: 800px; /* adjust as needed */
+    overflow: hidden;
 }
 
-.marquee-wrapper{
-    overflow:hidden;
-    white-space:nowrap;
-    width:100%;
-    height:40px;
-    display:flex;
-    align-items:center;
-}
-
-.marquee-content{
-    display:flex;
-    align-items:center;
-    width:max-content;
-    animation:scrollText 10s linear infinite;
-}
-
-.marquee-content span{
-    padding-right:80px;
-    color:#8a1f4d; /* theme color */
-    font-size:15px;
-    font-weight:600;
-}
-
-.translate-item{
-    flex-shrink:0;
-    margin-left:15px;
-}
-
-@keyframes scrollText{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-50%);
-    }
+.news-marquee marquee{
+    color: #430011;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
 }
