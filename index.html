@@ -69,9 +69,9 @@
                                         <li class="news-marquee">
                                             <marquee direction="left" scrollamount="4">
                                                 <b>
-                                                   • தமிழக மகளிர் பேரவை • பெண்கள் முன்னேற்றம் • கிராம வளர்ச்சி •
+                                                    • தமிழக மகளிர் பேரவை • பெண்கள் முன்னேற்றம் • கிராம வளர்ச்சி •
                                                     சூரிய சக்தி கிராமங்கள் • இயற்கை விவசாயம் • சமூக நலன் •
-                                                    கல்வி மற்றும் திறன் மேம்பாடு 
+                                                    கல்வி மற்றும் திறன் மேம்பாடு
                                                 </b>
                                             </marquee>
                                         </li>
@@ -98,7 +98,7 @@
                                         <a href="vision-mission.html">Vision & Mission</a>
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#">Services</a>
+                                        <a href="services.html">Services</a>
                                         <ul>
                                             <li>
                                                 <a href="womens-empowerment.html">Women’s Empowerment</a>
@@ -458,8 +458,7 @@
                                 <div class="donation-card-five__content">
                                     <h3 class="donation-card-five__title"><a href="contact.html">Chennai District
                                             Team</a></h3><!-- /.donation-card-five__title -->
-                                    <p class="donation-card-five__text">Coordinating women's welfare programs,
-                                        leadership initiatives, and community engagement activities.</p>
+
                                     <!-- /.donation-card-five__text -->
                                 </div><!-- /.donation-card-five__content -->
                             </div><!-- /.donation-card-five__image -->
@@ -490,8 +489,7 @@
                                 <div class="donation-card-five__content">
                                     <h3 class="donation-card-five__title"><a href="contact.html">Coimbatore District
                                             Team</a></h3><!-- /.donation-card-five__title -->
-                                    <p class="donation-card-five__text">Promoting entrepreneurship, skill development,
-                                        and educational support programs.</p><!-- /.donation-card-five__text -->
+
                                 </div><!-- /.donation-card-five__content -->
                             </div><!-- /.donation-card-five__image -->
                             <div class="donation-card-five__progress">
@@ -521,8 +519,7 @@
                                 <div class="donation-card-five__content">
                                     <h3 class="donation-card-five__title"><a href="contact.html">Madurai District
                                             Team</a></h3><!-- /.donation-card-five__title -->
-                                    <p class="donation-card-five__text">Leading rural development projects and
-                                        environmental awareness campaigns.</p><!-- /.donation-card-five__text -->
+
                                 </div><!-- /.donation-card-five__content -->
                             </div><!-- /.donation-card-five__image -->
                             <div class="donation-card-five__progress">
@@ -552,8 +549,7 @@
                                 <div class="donation-card-five__content">
                                     <h3 class="donation-card-five__title"><a href="contact.html">Tiruchirappalli
                                             District Team</a></h3><!-- /.donation-card-five__title -->
-                                    <p class="donation-card-five__text">Organizing social welfare initiatives and
-                                        community empowerment activities.</p><!-- /.donation-card-five__text -->
+
                                 </div><!-- /.donation-card-five__content -->
                             </div><!-- /.donation-card-five__image -->
                             <div class="donation-card-five__progress">
@@ -1314,60 +1310,60 @@
 
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
-const enBtn = document.getElementById("btn-en");
-const taBtn = document.getElementById("btn-ta");
+        const enBtn = document.getElementById("btn-en");
+        const taBtn = document.getElementById("btn-ta");
 
-function setCookie(name, value) {
-    document.cookie = name + "=" + value + ";path=/";
-}
+        function setCookie(name, value) {
+            document.cookie = name + "=" + value + ";path=/";
+        }
 
-function switchToTamil() {
-    const select = document.querySelector(".goog-te-combo");
+        function switchToTamil() {
+            const select = document.querySelector(".goog-te-combo");
 
-    if (!select) {
-        setTimeout(switchToTamil, 500);
-        return;
-    }
+            if (!select) {
+                setTimeout(switchToTamil, 500);
+                return;
+            }
 
-    select.value = "ta";
-    select.dispatchEvent(new Event("change"));
+            select.value = "ta";
+            select.dispatchEvent(new Event("change"));
 
-    taBtn.classList.add("active");
-    enBtn.classList.remove("active");
+            taBtn.classList.add("active");
+            enBtn.classList.remove("active");
 
-    localStorage.setItem("language", "ta");
-}
+            localStorage.setItem("language", "ta");
+        }
 
-function switchToEnglish() {
-    document.cookie =
-        "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        function switchToEnglish() {
+            document.cookie =
+                "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
-    document.cookie =
-        "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
-        window.location.hostname;
+            document.cookie =
+                "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" +
+                window.location.hostname;
 
-    localStorage.setItem("language", "en");
+            localStorage.setItem("language", "en");
 
-    window.location.reload();
-}
+            window.location.reload();
+        }
 
-taBtn.addEventListener("click", switchToTamil);
-enBtn.addEventListener("click", switchToEnglish);
+        taBtn.addEventListener("click", switchToTamil);
+        enBtn.addEventListener("click", switchToEnglish);
 
-window.addEventListener("load", () => {
-    const currentLang = localStorage.getItem("language") || "en";
+        window.addEventListener("load", () => {
+            const currentLang = localStorage.getItem("language") || "en";
 
-    if (currentLang === "ta") {
-        taBtn.classList.add("active");
-        enBtn.classList.remove("active");
+            if (currentLang === "ta") {
+                taBtn.classList.add("active");
+                enBtn.classList.remove("active");
 
-        setTimeout(switchToTamil, 1500);
-    } else {
-        enBtn.classList.add("active");
-        taBtn.classList.remove("active");
-    }
-});
-</script>
+                setTimeout(switchToTamil, 1500);
+            } else {
+                enBtn.classList.add("active");
+                taBtn.classList.remove("active");
+            }
+        });
+    </script>
 
 </body>
 
