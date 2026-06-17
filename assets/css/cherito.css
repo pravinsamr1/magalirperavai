@@ -5098,7 +5098,7 @@ h6 {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 @media (max-width: 1199px) {
@@ -5108,7 +5108,7 @@ h6 {
 }
 @media (min-width: 1600px) {
   .topbar--three .topbar__contact {
-    gap: 100px;
+    gap: 85px;
   }
 }
 
@@ -6460,7 +6460,7 @@ h6 {
 
 .main-header--five .main-header__nav {
   position: relative;
-  padding-left: 40px;
+  padding-left: 15px;
   z-index: 1;
 }
 
