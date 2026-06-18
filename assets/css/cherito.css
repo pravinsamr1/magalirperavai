@@ -5262,7 +5262,7 @@ h6 {
 }
 
 .topbar--five .topbar__inner {
-  padding: 7.3px 0px 4.3px 40px;
+  padding: 7.3px 0px 4.3px 20px;
   z-index: 1;
 }
 
@@ -6488,7 +6488,7 @@ h6 {
 }
 
 .main-header--five .main-header__left {
-  gap: 80px;
+  gap: 50px;
 }
 
 .main-header--five .main-header__nav {
@@ -6856,7 +6856,7 @@ h6 {
 }
 
 .main-menu .main-menu__list>li+li {
-  margin-left: 40px;
+  margin-left: 32px;
 }
 
 .main-menu .main-menu__list>li>a {
