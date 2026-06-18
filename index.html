@@ -182,18 +182,21 @@
                         </div><!-- /.mobile-nav__toggler -->
 
                         <div class="main-header__logo logo-retina">
-                            <a href="index.html" class="main-header__flag-link">
-                                <video
-                                    src="video.mp4"
-                                    autoplay
-                                    muted
-                                    loop
-                                    playsinline
-                                    preload="auto"
-                                    class="main-header__flag-video"
-                                ></video>
-                            </a>
-                        </div>
+    <a href="index.html" class="main-header__flag-link">
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            class="main-header__flag-video"
+        >
+            <source src="video.mov" type="video/quicktime">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </a>
+</div>
                     </div><!-- /.main-header__right -->
                 </div><!-- /.main-header__inner -->
             </div><!-- /.container-fluid -->
