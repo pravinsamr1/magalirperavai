@@ -25241,7 +25241,7 @@ li:hover .footer-widget__info__icon {
 
 @media (max-width: 991px) {
   .cta-one {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 }
 
@@ -29102,6 +29102,7 @@ body {
   right: -45px;
   top: -53px;
   display: block;
+  background: #ffffff;
 }
 
 .main-header__flag-video {
@@ -29120,21 +29121,25 @@ body {
     display: inline-block !important;
     z-index: 1 !important;
     vertical-align: middle;
+    background: #ffffff;
   }
 
   .main-header__flag-video {
     width: 120px !important;
+    background: #ffffff;
   }
 }
 
 @media (max-width: 575px) {
   .main-header__flag-video {
     width: 100px !important;
+    background: #ffffff;
   }
 }
 
 @media (max-width: 375px) {
   .main-header__flag-video {
     width: 80px !important;
+    background: #ffffff;
   }
 }
