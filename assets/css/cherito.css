@@ -5106,6 +5106,7 @@ h6 {
     gap: 40px;
   }
 }
+
 @media (min-width: 1600px) {
   .topbar--three .topbar__contact {
     gap: 85px;
@@ -6418,7 +6419,7 @@ h6 {
 
 @media (max-width: 1799px) {
   .main-header--five .container-fluid::before {
-    width: 265px;
+    width: 200px;
   }
 }
 
@@ -6455,18 +6456,22 @@ h6 {
     justify-content: space-between;
     align-items: center;
   }
+
   .main-header--five .main-header__left,
   .main-header--five .main-header__right {
     display: contents;
   }
+
   .main-header--five .main-header__left .main-header__logo {
     order: 1;
   }
+
   .main-header--five .main-header__right .main-header__logo {
     order: 2;
     margin-right: auto;
     margin-left: 20px;
   }
+
   .main-header--five .mobile-nav__btn {
     order: 3;
   }
@@ -6482,6 +6487,7 @@ h6 {
   .main-header--five .main-header__logo img {
     max-width: 85px;
   }
+
   .main-header--five .main-header__right .main-header__logo {
     margin-left: 10px;
   }
@@ -13756,7 +13762,8 @@ li:hover .footer-widget__info__icon {
   .main-slider-five__bg__inner {
     background-image: url(../../mobile-banner.jpg) !important;
   }
-  .banner-mobile-2{
+
+  .banner-mobile-2 {
     background-image: url(../../mobile-banner2.jpg) !important;
   }
 }
@@ -28965,9 +28972,13 @@ body.boxed-wrapper .page-wrapper {
 }
 
 @media (max-width: 767px) {
-  .about-five__text, .activities-one__text, .service-card-four__text {
+
+  .about-five__text,
+  .activities-one__text,
+  .service-card-four__text {
     text-align: justify;
   }
+
   .about-five__image {
     width: 100%;
   }
@@ -28980,100 +28991,150 @@ body.boxed-wrapper .page-wrapper {
 
 
 .language-switcher {
-    display: flex;
-    align-items: center;
-    background: #f5f5f5;
-    border: 1px solid #e5e5e5;
-    border-radius: 12px;
-    margin-top: -12px;
-    padding: 0px;
-    min-width: 140px;
-    height: 40px;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  margin-top: -12px;
+  padding: 0px;
+  min-width: 140px;
+  height: 40px;
 }
 
 .lang-btn {
-    border: none;
-    background: transparent;
-    padding: 6px 14px;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #666;
-    transition: all 0.3s ease;
+  border: none;
+  background: transparent;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.3s ease;
 }
 
 .lang-btn.active {
-    background: #31010d;
-    color: #ec9f12;;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  background: #31010d;
+  color: #ec9f12;
+  ;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
 
 .goog-te-banner-frame,
 .goog-logo-link,
 .goog-te-gadget span,
 .skiptranslate iframe {
-    display: none !important;
+  display: none !important;
 }
 
 body {
-    top: 0 !important;
+  top: 0 !important;
 }
 
 .goog-te-gadget {
-    font-size: 0 !important;
+  font-size: 0 !important;
 }
 
 
-.topbar__contact{
-    /* display:flex;
+.topbar__contact {
+  /* display:flex;
     align-items:center; */
-    width:100%;
-    margin:0;
+  width: 100%;
+  margin: 0;
 }
 
 
 
-.news-marquee{
-    width: 800px; /* adjust as needed */
-    overflow: hidden;
+.news-marquee {
+  width: 800px;
+  /* adjust as needed */
+  overflow: hidden;
 }
 
-.news-marquee marquee{
-    color: #430011;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 30px;
+.news-marquee marquee {
+  color: #430011;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
 }
 
-.flag-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    perspective:1000px;
+.flag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
 }
 
-.wave-flag{
-    width:350px;
-    transform-origin:left center;
-    animation:realFlagWave 3s ease-in-out infinite;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,.25));
+.wave-flag {
+  width: 350px;
+  transform-origin: left center;
+  animation: realFlagWave 3s ease-in-out infinite;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, .25));
 }
 
-@keyframes realFlagWave{
-    0%{
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    25%{
-        transform: perspective(1000px) rotateY(-8deg) skewY(1deg);
-    }
-    50%{
-        transform: perspective(1000px) rotateY(0deg);
-    }
-    75%{
-        transform: perspective(1000px) rotateY(8deg) skewY(-1deg);
-    }
-    100%{
-        transform: perspective(1000px) rotateY(0deg);
-    }
+@keyframes realFlagWave {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  25% {
+    transform: perspective(1000px) rotateY(-8deg) skewY(1deg);
+  }
+
+  50% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  75% {
+    transform: perspective(1000px) rotateY(8deg) skewY(-1deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+}
+
+/* Header Flag Video Styling */
+.main-header__flag-link {
+  position: absolute;
+  z-index: 99999;
+  right: -45px;
+  top: -53px;
+  display: block;
+}
+
+.main-header__flag-video {
+  width: 200px;
+  display: block;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+/* Responsive adjustments for mobile/tablet headers */
+@media (max-width: 1199px) {
+  .main-header__flag-link {
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    display: inline-block !important;
+    z-index: 1 !important;
+    vertical-align: middle;
+  }
+
+  .main-header__flag-video {
+    width: 120px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-header__flag-video {
+    width: 100px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-header__flag-video {
+    width: 80px !important;
+  }
 }
