@@ -54,6 +54,38 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/cherito.css" />
     <link rel="stylesheet" href="assets/css/color-4.css">
+    <style>
+        /* Vision-Mission page: 3 tabs → one row on mobile */
+        @media (max-width: 767px) {
+            .activities-one__tab-box .tab-buttons {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 8px !important;
+            }
+            .activities-one__tab-box .tab-buttons .cherito-btn {
+                padding: 13px 8px 14px !important;
+                font-size: 12px !important;
+                white-space: normal !important;
+                text-align: center !important;
+                line-height: 1.3 !important;
+            }
+            .activities-one__tab-box .tab-buttons .cherito-btn .cherito-btn__text {
+                font-size: 12px !important;
+            }
+        }
+        @media (max-width: 430px) {
+            .activities-one__tab-box .tab-buttons {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 6px !important;
+            }
+            .activities-one__tab-box .tab-buttons .cherito-btn {
+                padding: 12px 6px 13px !important;
+                font-size: 11px !important;
+            }
+            .activities-one__tab-box .tab-buttons .cherito-btn .cherito-btn__text {
+                font-size: 11px !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="custom-cursor">
@@ -201,7 +233,7 @@
                                 <span class="cherito-btn__hover cherito-btn__hover--5"></span>
                             </li>
                             <li data-tab="#activities-one03" class="cherito-btn tab-btn">
-                                <span class="cherito-btn__text">Our Commitment</span>
+                                <span class="cherito-btn__text">Commitment</span>
                                 <span class="cherito-btn__hover cherito-btn__hover--1"></span>
                                 <span class="cherito-btn__hover cherito-btn__hover--2"></span>
                                 <span class="cherito-btn__hover cherito-btn__hover--3"></span>

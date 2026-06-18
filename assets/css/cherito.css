@@ -26399,6 +26399,50 @@ li:hover .footer-widget__info__icon {
   }
 }
 
+/* Mobile-friendly tab buttons: 2-column grid layout */
+@media (max-width: 767px) {
+  .activities-one__tab-box .tab-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .activities-one__tab-box .tab-buttons .cherito-btn {
+    padding: 14px 16px 15px;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .activities-one__tab-box .tab-buttons .cherito-btn .cherito-btn__text {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+}
+
+@media (max-width: 430px) {
+  .activities-one__tab-box .tab-buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .activities-one__tab-box .tab-buttons .cherito-btn {
+    padding: 16px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .activities-one__tab-box .tab-buttons .cherito-btn .cherito-btn__text {
+    font-size: 12px;
+  }
+}
+
 .activities-one__tab-box .tabs-content {
   margin-top: 50px;
   position: relative;
